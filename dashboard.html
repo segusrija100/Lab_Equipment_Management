@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard overview | LabEase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+<a class="brand" href="index.html"><span class="brand-icon">✦</span><span>Lab<span class="brand-light">Ease</span><small>LAB MANAGEMENT</small></span></a>
+<div class="side-label">WORKSPACE</div><nav><a class="nav-link active" href="dashboard.html"><span>▦</span>Dashboard</a><a class="nav-link " href="equipment.html"><span>▣</span>Equipment</a><a class="nav-link " href="addEquipment.html"><span>＋</span>Add Equipment</a><a class="nav-link " href="request.html"><span>✉</span>Request Equipment</a><a class="nav-link " href="issueRecords.html"><span>⇄</span>Issue Records</a><a class="nav-link " href="return.html"><span>↩</span>Returns</a><a class="nav-link " href="users.html"><span>♙</span>Users</a><a class="nav-link " href="about.html"><span>✦</span>About</a></nav>
+<div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✧</div><b>Need a hand?</b><p>Keep your lab organized and ready for every experiment.</p></div>
+<div class="profile"><div class="avatar">S</div><div><b>Lab Administrator</b><small>System manager</small></div></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><div class="eyebrow">COLLEGE LAB / MANAGEMENT</div><h1>Dashboard overview</h1></div><div class="top-actions"><span class="live-dot"></span><span id="today"></span><div class="top-avatar">S</div></div></header>
+<section class="welcome"><div><span class="welcome-tag">✦ YOUR LAB, IN CONTROL</span><h2>Good to see you! 👋</h2><p>Here’s what’s happening in your laboratory today. Keep track of your equipment, people and daily activity.</p></div><div class="welcome-art">⚗️<span>✦</span></div></section>
+<div class="stats-grid"><article class="stat-card"><div class="stat-top"><span>Total equipment</span><span class="stat-icon blue">▣</span></div><strong id="total-count">—</strong><small>Registered lab items</small></article><article class="stat-card"><div class="stat-top"><span>Available units</span><span class="stat-icon mint">✓</span></div><strong id="available-count">—</strong><small>Ready to be requested</small></article><article class="stat-card"><div class="stat-top"><span>Currently issued</span><span class="stat-icon purple">⇄</span></div><strong id="issued-count">—</strong><small>Units with users</small></article><article class="stat-card"><div class="stat-top"><span>Damaged items</span><span class="stat-icon orange">⚠</span></div><strong id="damaged-count">—</strong><small>Need attention</small></article></div>
+<div class="content-grid"><section class="panel"><div class="panel-heading"><div><h3>Recent activity</h3><p>Latest equipment transactions from your lab</p></div><a class="text-btn" href="issueRecords.html">View all ↗</a></div><div id="recent-list" class="table-wrap"><div class="empty">Loading activity…</div></div></section><section class="panel quick-panel"><div class="panel-heading"><div><h3>Quick actions</h3><p>Common tasks, one click away</p></div></div><a class="quick-action" href="addEquipment.html"><span class="quick-icon violet">＋</span><span><b>Add equipment</b><small>Register a new lab item</small></span><i>↗</i></a><a class="quick-action" href="request.html"><span class="quick-icon aqua">✉</span><span><b>New request</b><small>Record an equipment request</small></span><i>↗</i></a><a class="quick-action" href="return.html"><span class="quick-icon peach">↩</span><span><b>Manage returns</b><small>Update returned equipment</small></span><i>↗</i></a><div class="quote">“A well-managed lab is where great ideas begin.”<small>— LabEase</small></div></section></div>
+<section class="info-strip"><div><b>Keep inventory accurate</b><p>Update equipment details whenever new tools arrive or an item needs maintenance.</p></div><a href="equipment.html" class="secondary-btn">Manage inventory ↗</a></section>
+<footer class="footer">© 2026 LabEase · College Laboratory Equipment Management System <span>Organized labs. Better discoveries.</span></footer>
+</main></div>
+<div class="toast" id="toast"></div>
+<script src="page.js"></script>
+</body></html>
